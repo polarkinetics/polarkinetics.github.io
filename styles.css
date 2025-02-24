@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #f8f9fa; /* Very light grey */
+    padding: 25px 0; /* Increased padding */
+}
+
+.logo {
+    max-width: 250px; /* Increased logo size */
+}
+
+.nav-link {
+    color: #333;
+    font-weight: bold;
+    position: relative; /* Ensure positioning is relative */
+    display: inline-block;
+    padding: 0.5rem; /* Adjust padding if needed */
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #fff; /* Change text color on hover */
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #007bff; /* Background color for the box */
+    z-index: -1; /* Position the background behind the text */
+    transition: all 0.3s ease; /* Smooth transition */
+    border: 1px solid red; /* Debugging border */
+    opacity: 0; /* Start with the box invisible */
+}
+
+.nav-link:hover::before {
+    opacity: 1; /* Make the box visible on hover */
+}
+
+main {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better text readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
