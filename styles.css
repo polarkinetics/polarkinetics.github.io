@@ -1,62 +1,89 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('background.jpg') no-repeat center center fixed;
+    background-image: url('background.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-header {
-    background-color: #f8f9fa; /* Very light grey */
-    padding: 25px 0; /* Increased padding */
+.about_me-page {
+    background: #333; /* Dark grey color */
+    background-image: none; /* Override the background image */
 }
 
-.logo {
-    max-width: 250px; /* Increased logo size */
+.navbar {
+    padding: 15px;
+    margin-bottom: 60px;
 }
 
-.nav-link {
-    color: #333;
-    font-weight: bold;
-    position: relative; /* Ensure positioning is relative */
-    display: inline-block;
-    padding: 0.5rem; /* Adjust padding if needed */
-    text-decoration: none;
+.navbar-custom {
+    background-color: #d3d3d3; /* Light grey color */
 }
 
-.nav-link:hover {
-    color: #fff; /* Change text color on hover */
+.navbar-nav .nav-link {
+    font-size: 1.4em;
 }
 
-.nav-link::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #007bff; /* Background color for the box */
-    z-index: -1; /* Position the background behind the text */
-    transition: all 0.3s ease; /* Smooth transition */
-    border: 1px solid red; /* Debugging border */
-    opacity: 0; /* Start with the box invisible */
+.index-logo {
+    max-width: 400px; /* Adjust the max-width to make the logo bigger on the index page */
+    height: auto;
 }
 
-.nav-link:hover::before {
-    opacity: 1; /* Make the box visible on hover */
+.navbar-logo {
+    max-width: 150px; /* Logo size for "About Me" page */
+    height: auto;
 }
 
-main {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better text readability */
-    padding: 20px;
+.about-section {
+    margin-top: 50px;
+}
+
+.headshot {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
-h1 {
-    color: #333;
+.about-subtitle {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #fff; /* Adjust text color for better readability on dark background */
 }
 
-p {
-    color: #666;
+.body-text {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #ccc; /* Adjust text color for better readability on dark background */
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        margin-left: auto; 
+        order: 1;
+    }
+
+    .navbar-collapse {
+        order: 2;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1em;
+    }
+
+    .about-section {
+        text-align: center;
+    }
+
+    .about-subtitle {
+        font-size: 1.5em;
+    }
+
+    .body-text {
+        margin-top: 10px;
+    }
+
+    .col-md-4, .col-md-8 {
+        display: block;
+        width: 100%;
+    }
 }
