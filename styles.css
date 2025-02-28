@@ -75,7 +75,7 @@ body {
     }
     
     .index-logo {
-        max-width: 400px; /* Adjust the max-width to make the logo bigger on the index page */
+        max-width: 200px; /* Adjust the max-width to make the logo bigger on the index page */
         height: auto;
         margin-bottom: 5px;
     }
