@@ -11,9 +11,13 @@ body {
     background-image: none; /* Override the background image */
 }
 
+.about_me-page .body-text {
+    color: #ccc; /* Lighter color for better readability on dark background */
+}
+
 .navbar {
     padding: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .navbar-custom {
@@ -27,10 +31,11 @@ body {
 .index-logo {
     max-width: 400px; /* Adjust the max-width to make the logo bigger on the index page */
     height: auto;
+    margin-bottom: 20px;
 }
 
 .navbar-logo {
-    max-width: 150px; /* Logo size for "About Me" page */
+    max-width: 200px; /* Logo size for "About Me" page */
     height: auto;
 }
 
@@ -50,13 +55,31 @@ body {
     color: #fff; /* Adjust text color for better readability on dark background */
 }
 
-.body-text {
-    font-size: 1.2em;
+.subtitle {
+    font-size: 2.2em;
     margin-top: 20px;
-    color: #ccc; /* Adjust text color for better readability on dark background */
+    color: #333;
+    margin-bottom: 10px; /* Adjust this value to change the bottom margin */
+}
+
+.body-text {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #3a3a3a; /* Default text color for the index page */
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .index-logo {
+        max-width: 400px; /* Adjust the max-width to make the logo bigger on the index page */
+        height: auto;
+        margin-bottom: 5px;
+    }
+
     .navbar-toggler {
         margin-left: auto; 
         order: 1;
