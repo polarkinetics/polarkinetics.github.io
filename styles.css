@@ -6,12 +6,12 @@ body {
     background-position: center;
 }
 
-.about_me-page {
+.about_me-page, .contact-page {
     background: #333; /* Dark grey color */
     background-image: none; /* Override the background image */
 }
 
-.about_me-page .body-text {
+.about_me-page .body-text, .contact-page .contact-subtitle {
     color: #ccc; /* Lighter color for better readability on dark background */
 }
 
@@ -39,7 +39,7 @@ body {
     height: auto;
 }
 
-.about-section {
+.about-section, .contact-section {
     margin-top: 50px;
 }
 
@@ -49,7 +49,7 @@ body {
     border-radius: 10px;
 }
 
-.about-subtitle {
+.about-subtitle, .contact-title {
     font-size: 2em;
     margin-top: 20px;
     color: #fff; /* Adjust text color for better readability on dark background */
@@ -66,6 +66,83 @@ body {
     font-size: 1.1em;
     margin-top: 10px;
     color: #3a3a3a; /* Default text color for the index page */
+}
+
+.contact-subtitle {
+    font-size: 1.3em; /* Smaller font size */
+    color: #bbb; /* Darker color for better readability on dark background */
+    margin-bottom: 30px;
+}
+
+.vertical-containers-page {
+    background: #333; /* Dark grey color */
+    background-image: none; /* Override the background image */
+}
+
+.vertical-containers-page .container-item {
+    background-color: rgba(211, 211, 211, 0.8); /* Light grey with 80% opacity */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.vertical-containers {
+    margin-top: 50px;
+}
+
+.container-item {
+    margin-bottom: 30px;
+}
+
+.container-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container-title {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #fff; /* Adjust text color for better readability on dark background */
+}
+
+.container-text {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.carousel-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.carousel-subtitle {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.social-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 50px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel {
+    margin-bottom: 60px; /* Added margin bottom */
 }
 
 @media (max-width: 768px) {
@@ -93,11 +170,11 @@ body {
         font-size: 1em;
     }
 
-    .about-section {
+    .about-section, .contact-section {
         text-align: center;
     }
 
-    .about-subtitle {
+    .about-subtitle, .contact-title {
         font-size: 1.5em;
     }
 
@@ -108,5 +185,29 @@ body {
     .col-md-4, .col-md-8 {
         display: block;
         width: 100%;
+    }
+    
+    .vertical-containers {
+        text-align: center;
+    }
+
+    .container-title {
+        font-size: 1.5em;
+    }
+
+    .container-text {
+        margin-top: 10px;
+    }
+
+    .carousel-title {
+        font-size: 2em;
+    }
+
+    .carousel-subtitle {
+        font-size: 1.2em;
+    }
+
+    .carousel {
+        margin-bottom: 40px; /* Added margin bottom for mobile */
     }
 }
