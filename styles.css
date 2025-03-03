@@ -164,10 +164,13 @@ body {
 
     .navbar-collapse {
         order: 2;
+
     }
 
     .navbar-nav .nav-link {
         font-size: 1em;
+        display: inline-block;
+        float: right; /* Float the menu items to the right */
     }
 
     .about-section, .contact-section {
