@@ -6,12 +6,12 @@ body {
     background-position: center;
 }
 
-.about_me-page, .contact-page {
+.about_me-page, .contact-page, .coming-soon-page {
     background: #333; /* Dark grey color */
     background-image: none; /* Override the background image */
 }
 
-.about_me-page .body-text, .contact-page .contact-subtitle {
+.about_me-page .body-text, .contact-page .contact-subtitle, .coming-soon-page {
     color: #ccc; /* Lighter color for better readability on dark background */
 }
 
